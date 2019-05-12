@@ -29,16 +29,16 @@ class MainActivity : AppCompatActivity() {
 
     private fun mJson1() {
 
-        val url = "https://api.letsbuildthatapp.com/youtube/home_feed"
+        val url = "https://api.vk.com/method/groups.getById?group_id=182089910&fields=description&access_token=933765929337659293376592b9935d3b639933793376592cfe0a87dc9dbbcb8e017199f&v=5.95"
 
         val request = Request.Builder().url(url).build()
 
         val client = OkHttpClient()
 
         client.newCall(request).enqueue(object: Callback {
-            override fun onResponse(call: Call, response: Response) {
+            override fun onResponse(call: Call?, response: Response?) {
 
-                val body = response.body()?.string()
+                val body = response?.body()?.string()
                 println(body)
 
                 val gson = GsonBuilder().create()
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
                 val startFeed = gson.fromJson(body,StartFeed::class.java)
 
                 runOnUiThread {
-                    tv_start.text = startFeed.videos[0].name
+                    tv_start.text = startFeed.response[0].description
                 }
             }
 
@@ -57,12 +57,6 @@ class MainActivity : AppCompatActivity() {
         })
     }
 }
-
-class StartFeed (val videos: List<Video>)
-
-class Video (val name: String)
-
-
 
 
 
