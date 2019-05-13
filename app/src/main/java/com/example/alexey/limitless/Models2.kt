@@ -1,13 +1,17 @@
 package com.example.alexey.limitless
 
 
-class MenuFeed (val response: Rspns2)
+class MenuFeed(val response: Rspns2)
 
-class Rspns2 (val items: List<Items>)
+class Rspns2(val items: List<Itms>)
 
-class Items(val text: String)
+class Itms(val text: String, val date: Long, val attachments: List<Attchmnts>)
 
+class Attchmnts(val photo: Pht)
 
+class Pht(val sizes: List<Szs>)
+
+class Szs(val url: String)
 
 
 //{

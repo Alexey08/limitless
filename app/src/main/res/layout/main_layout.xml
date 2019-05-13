@@ -5,13 +5,16 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        android:background="#C900826E">
 
     <TextView android:layout_width="match_parent"
               android:layout_height="0dp"
               android:id="@+id/tv_start"
-              android:text="@android:string/ok"
-              android:textSize="24dp"
+              android:text="@string/start"
+              android:textColor="#000"
+              android:textSize="24sp"
+              android:gravity="center"
               android:layout_marginBottom="8dp"
               app:layout_constraintBottom_toTopOf="@+id/bt_ok"
               android:layout_marginTop="8dp"
@@ -19,13 +22,13 @@
               app:layout_constraintStart_toStartOf="parent"
               android:layout_marginStart="8dp"
               app:layout_constraintEnd_toEndOf="parent"
-              android:layout_marginEnd="8dp" />
+              android:layout_marginEnd="8dp"/>
 
     <Button android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/bt_ok"
             style="@style/Widget.AppCompat.Button"
-            android:text="@android:string/ok"
+            android:text="@string/read"
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginEnd="8dp"

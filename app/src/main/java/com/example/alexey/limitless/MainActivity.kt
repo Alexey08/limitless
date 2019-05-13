@@ -17,8 +17,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_layout)
 
-//        tv_start.text = "new text"
-
         bt_ok.setOnClickListener {
             val myIntent = Intent(this, MenuActivity::class.java)
             startActivity(myIntent)
