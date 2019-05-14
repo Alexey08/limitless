@@ -22,6 +22,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(myIntent)
         }
 
+        bt_vcblr.setOnClickListener {
+            val myIntent2 = Intent(this, VocabularyMain::class.java)
+            startActivity(myIntent2)
+        }
+
         mJson1()
     }
 

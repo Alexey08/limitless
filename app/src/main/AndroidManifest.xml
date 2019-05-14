@@ -32,5 +32,10 @@
                        android:value=".MenuActivity"/>
         </activity>
 
+        <activity android:name=".VocabularyMain"
+                  android:launchMode="singleTop">
+
+        </activity>
+
     </application>
 </manifest>
