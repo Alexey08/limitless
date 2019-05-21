@@ -8,6 +8,9 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.alexey.limitless.model.Itms
+import com.example.alexey.limitless.model.MenuFeed
+import com.example.alexey.limitless.model.Szs
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.menu_item.view.*
 

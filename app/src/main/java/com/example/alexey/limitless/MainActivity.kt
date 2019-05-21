@@ -3,6 +3,7 @@ package com.example.alexey.limitless
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.example.alexey.limitless.model.StartFeed
 import com.google.gson.GsonBuilder
 import kotlinx.android.synthetic.main.main_layout.*
 import okhttp3.*
@@ -47,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                 val gson = GsonBuilder().create()
                 println(gson)
 
-                val startFeed = gson.fromJson(body,StartFeed::class.java)
+                val startFeed = gson.fromJson(body, StartFeed::class.java)
 
                 runOnUiThread {
                     tv_start.text = startFeed.response[0].description

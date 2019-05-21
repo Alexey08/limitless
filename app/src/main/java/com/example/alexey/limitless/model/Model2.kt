@@ -1,4 +1,4 @@
-package com.example.alexey.limitless
+package com.example.alexey.limitless.model
 
 
 class MenuFeed(val response: Rspns2)

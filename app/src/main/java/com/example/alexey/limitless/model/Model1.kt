@@ -1,4 +1,4 @@
-package com.example.alexey.limitless
+package com.example.alexey.limitless.model
 
 
 class StartFeed (val response: List<Rspns>)
