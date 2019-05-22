@@ -20,21 +20,16 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MenuActivity"
+        <activity android:name=".menuList.MenuActivity"
                   android:launchMode="singleTop">
 
         </activity>
 
-        <activity android:name=".PostActivity"
+        <activity android:name=".postList.PostActivity"
                   android:label="Post"
                   android:launchMode="singleTop">
             <meta-data android:name="android.support.PARENT_ACTIVITY"
-                       android:value=".MenuActivity"/>
-        </activity>
-
-        <activity android:name=".VocabularyMain"
-                  android:launchMode="singleTop">
-
+                       android:value=".menuList.MenuActivity"/>
         </activity>
 
     </application>

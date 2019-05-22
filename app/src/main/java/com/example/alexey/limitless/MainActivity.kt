@@ -3,11 +3,11 @@ package com.example.alexey.limitless
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.example.alexey.limitless.menuList.MenuActivity
 import com.example.alexey.limitless.model.StartFeed
 import com.google.gson.GsonBuilder
 import kotlinx.android.synthetic.main.main_layout.*
 import okhttp3.*
-import okhttp3.OkHttpClient
 import java.io.IOException
 
 
@@ -21,11 +21,6 @@ class MainActivity : AppCompatActivity() {
         bt_ok.setOnClickListener {
             val myIntent = Intent(this, MenuActivity::class.java)
             startActivity(myIntent)
-        }
-
-        bt_vcblr.setOnClickListener {
-            val myIntent2 = Intent(this, VocabularyMain::class.java)
-            startActivity(myIntent2)
         }
 
         mJson1()
@@ -61,10 +56,3 @@ class MainActivity : AppCompatActivity() {
         })
     }
 }
-
-
-
-// val url = "https://api.vk.com/method/wall.get?domain=englimitless&count=10&access_token=06aeee6606aeee6606aeee665e06c4b097006ae06aeee665a6385d379edae733141a766&v=5.95"
-//
-// val url = "https://api.letsbuildthatapp.com/youtube/home_feed"
-

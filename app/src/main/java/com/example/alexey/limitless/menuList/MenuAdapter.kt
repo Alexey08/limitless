@@ -1,6 +1,6 @@
 @file:Suppress("DEPRECATION")
 
-package com.example.alexey.limitless
+package com.example.alexey.limitless.menuList
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -8,13 +8,15 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.alexey.limitless.R
 import com.example.alexey.limitless.model.Itms
 import com.example.alexey.limitless.model.MenuFeed
 import com.example.alexey.limitless.model.Szs
+import com.example.alexey.limitless.postList.PostActivity
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.menu_item.view.*
 
-@Suppress("DEPRECATION")
+
 class MenuAdapter(private val menuFeed: MenuFeed) : RecyclerView.Adapter<ViewHolder>() {
 
     override fun getItemCount(): Int {
@@ -22,7 +24,13 @@ class MenuAdapter(private val menuFeed: MenuFeed) : RecyclerView.Adapter<ViewHol
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        return ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.menu_item, parent, false))
+        return ViewHolder(
+            LayoutInflater.from(parent.context).inflate(
+                R.layout.menu_item,
+                parent,
+                false
+            )
+        )
     }
 
     @SuppressLint("SetTextI18n", "SimpleDateFormat")
