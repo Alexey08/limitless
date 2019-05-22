@@ -1,3 +1,3 @@
 # limitless
 
-My Presentation - https://github.com/Alexey08/limitless_presentation
+My Presentation - https://github.com/Alexey08/presentation
